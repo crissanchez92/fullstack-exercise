@@ -1,5 +1,5 @@
 # Fullstack-exercise
-Coding Exercise – Full stack
+## Coding Exercise – Full stack
 
 
 The exercise was built in two simple projects as WebAPI (NetCore 3.1) and UI-Client (Angular 11). Regarding to the WebApi was split into two layers/projects: roofstock.Api and roofstock.Data. In the roofstock.Api I register the services using DependencyInjection and provided a couple of extension methods to register the DbContext from roofstock.Data and the AutoMapper custom configuration which is how I communicate between layers. The DbContext uses EFCore with LINQ and CodeFirst strategy for the database creation. For consuming the external file from the API provided in the requirement I used the Adapter patter to convert the data.
@@ -36,7 +36,7 @@ The exercise was built in two simple projects as WebAPI (NetCore 3.1) and UI-Cli
 10- Open the Application
  > http://localhost:4200/
 
-##Notes:
+## Notes:
 
 [1]: make sure the connection string is pointing to valid local SQL Server, appsettings.json has the default connection string so use the following pattern in case of changing it:
 Data Source=[YOUR_SQLSERVER];Initial Catalog=Roofstock;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
