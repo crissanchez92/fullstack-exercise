@@ -9,6 +9,9 @@ using DB = roofstock.Data.Entities;
 
 namespace roofstock.Api.Services.Impl
 {
+    /// <summary>
+    /// /// Provides crud operations for Property model.
+    /// </summary>
     public class PropertyService : IPropertyService
     {
         private readonly IPropertyDbService dbService;
@@ -26,6 +29,11 @@ namespace roofstock.Api.Services.Impl
             this.logger = logger;
         }
 
+        /// <summary>
+        /// Gets all properties from the dbService.
+        /// Maps the response Property into Property model.
+        /// </summary>
+        /// <returns>The list of properties found.</returns>
         public async Task<List<Property>> GetAll()
         {
             try
@@ -41,6 +49,12 @@ namespace roofstock.Api.Services.Impl
             }
         }
 
+        /// <summary>
+        /// Gets a single property from the dbService.
+        /// Maps the response Property into Property model.
+        /// </summary>
+        /// <param name="propertyID"></param>
+        /// <returns>The property found or null.</returns>
         public Property GetByPropertyId(int propertyID)
         {
             try
@@ -56,6 +70,13 @@ namespace roofstock.Api.Services.Impl
             }
         }
 
+        /// <summary>
+        /// Sends the property to save to DbService.
+        /// Translates the property into dbContext entity to save.
+        /// And translates the dbContext entity into property.
+        /// </summary>
+        /// <param name="property"></param>
+        /// <returns>The property saved including its generated ID.</returns>
         public Property Save(Property property)
         {
             try

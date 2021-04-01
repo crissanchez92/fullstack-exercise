@@ -4,6 +4,9 @@ using DB = roofstock.Data.Entities;
 
 namespace roofstock.Api.Mappers
 {
+    /// <summary>
+    /// Provides the entities mapping profile.
+    /// </summary>
     public class EntitiesProfile : Profile
     {
         public EntitiesProfile()

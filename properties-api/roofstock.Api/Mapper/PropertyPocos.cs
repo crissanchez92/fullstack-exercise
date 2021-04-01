@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 namespace roofstock.Api.Mappers
 {
+    /// <summary>
+    /// Contains all the classes which the external API json is converted to.
+    /// The response is converted into PropertiesPoco which contains the List<PropertyPoco>.
+    /// </summary>
+    
     public class AddressPoco
     {
         public string address1 { get; set; }

@@ -4,26 +4,29 @@ using System.Threading.Tasks;
 
 namespace roofstock.Data.Services
 {
+    /// <summary>
+    /// Provides methods to manage Property entity in the dbContext.
+    /// </summary>
     public interface IPropertyDbService
     {
         /// <summary>
-        /// Gets all properties
+        /// Gets all properties from the dbContext.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The list of properties found.</returns>
         Task<List<Property>> GetAll();
 
         /// <summary>
-        /// Gets property that mathes the given propertyID
+        /// Gets property from dbContext that mathes the given propertyID.
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>The property found or null.</returns>
         Property GetByPropertyId(int propertyID);
 
         /// <summary>
-        /// Saves the property
+        /// Saves the property into the dbContext.
         /// </summary>
         /// <param name="property"></param>
-        /// <returns></returns>
+        /// <returns>The property saved including its generated ID.</returns>
         Property Save(Property property);
     }
 }

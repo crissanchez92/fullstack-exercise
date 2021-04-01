@@ -8,7 +8,7 @@
 /bazel-out
 
 # dependencies
-/node_modules
+properties-client/node_modules
 
 # profiling files
 chrome-profiler-events*.json
@@ -45,15 +45,11 @@ testem.log
 .DS_Store
 Thumbs.db
 
-yarn.lock
+properties-client/yarn.lock
 
 #Api folders
-roofstock.Api/obj/
-
-roofstock.Data/obj/
-
-roofstock.Api/bin/
-
-roofstock.Data/bin/
-
-.vs/roofstock.Api/v16/.suo
+properties-api/roofstock.Api/obj/
+properties-api/roofstock.Data/obj/
+properties-api/roofstock.Api/bin/
+properties-api/roofstock.Data/bin/
+properties-api/.vs/roofstock.Api/v16/.suo

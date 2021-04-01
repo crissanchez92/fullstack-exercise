@@ -8,6 +8,9 @@ using System;
 
 namespace roofstock.Data
 {
+    /// <summary>
+    /// Provides the extension method to register the DbContext and services in the services collection.
+    /// </summary>
     public static class DependencyRegistration
     {
         public static void AddRoofstockDbContext(this IServiceCollection services, IConfiguration configuration)
@@ -17,10 +20,10 @@ namespace roofstock.Data
                 throw new ArgumentNullException(nameof(configuration));
             }
 
-            // services registration
+            // data services registration.
             services.AddTransient<IPropertyDbService, PropertyDbService>();
 
-            // db context registration
+            // db context registration using the connectionString comming from appsettings.json.
             services.AddDbContext<RoofstockDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         }

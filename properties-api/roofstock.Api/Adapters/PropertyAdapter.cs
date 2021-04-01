@@ -4,8 +4,16 @@ using System;
 
 namespace roofstock.Api.Adapters
 {
+    /// <summary>
+    /// Provides the adapter for Property entities.
+    /// </summary>
     public class PropertyAdapter : IPropertyAdapter
     {
+        /// <summary>
+        /// Adapts an instance of type PropertyPoco.
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns>The instance of type Property.</returns>
         public Property Adapt(object item)
         {
             try
