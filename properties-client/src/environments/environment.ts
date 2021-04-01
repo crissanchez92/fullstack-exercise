@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  externalAPI: 'https://localhost:5001/externalproperty',
+  roofstockAPI: 'https://localhost:5001/property'
 };
+
+export default environment;
 
 /*
  * For easier debugging in development mode, you can import the following file
