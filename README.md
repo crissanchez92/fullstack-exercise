@@ -8,11 +8,11 @@ The exercise was built in two simple projects as WebAPI (NetCore 3.1) and UI-Cli
 ![alt text](https://github.com/crissanchez92/fullstack-exercise/blob/main/ArchitectureDiagram.png)
 
 ## Requirements
-1- Git Client: https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line
-2- NetCore CLI: https://docs.microsoft.com/en-us/dotnet/core/tools/
-3- EFCore CLI: https://docs.microsoft.com/en-us/ef/core/cli/dotnet
-4- Angular CLI: https://angular.io/cli
-5- SQLExpress: https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15
+1- Git Client: https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line<br />
+2- NetCore CLI: https://docs.microsoft.com/en-us/dotnet/core/tools/<br />
+3- EFCore CLI: https://docs.microsoft.com/en-us/ef/core/cli/dotnet<br />
+4- Angular CLI: https://angular.io/cli<br />
+5- SQLExpress: https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15<br />
 
 
 ## Environment setup:
