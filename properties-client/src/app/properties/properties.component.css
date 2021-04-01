@@ -1,6 +1,7 @@
 .container {
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
 }
 table {
-    width: 90%;
+    width: 100%;
 }
