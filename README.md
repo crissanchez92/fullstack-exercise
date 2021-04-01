@@ -14,11 +14,14 @@ The exercise was built in two simple projects as WebAPI (NetCore 3.1) and UI-Cli
 
 4- Generate the Database (Review notes at the bottom)[1] ~ API Console
  > cd roofstock.Data
+ 
  > dotnet ef database update
  
 5- Build the Api ~ API Console
  > cd ../roofstock.Api
+ 
  > dotnet restore
+ 
  > dotnet build
 
 6- Run the Api ~ API Console
@@ -41,6 +44,8 @@ The exercise was built in two simple projects as WebAPI (NetCore 3.1) and UI-Cli
 [1]: make sure the connection string is pointing to valid local SQL Server, appsettings.json has the default connection string so use the following pattern in case of changing it:
 Data Source=[YOUR_SQLSERVER];Initial Catalog=Roofstock;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
 Both database creation factory and dbcontext are using the connection string from appsettings.json in roofstock.Api project.
+
+
 The appsettings file is located in the folder: \properties-api\roofstock.Api\appsettings.json.
 
 
