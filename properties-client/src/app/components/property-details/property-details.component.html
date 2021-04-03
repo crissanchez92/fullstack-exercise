@@ -1,0 +1,23 @@
+<div *ngIf="property">
+    <h1 class="display-4">Details for property {{ property.propertyID }}</h1>
+    <hr>
+    <h3>ID</h3>
+    <p>{{ property.id }}</p>
+    <h3>List Price</h3>
+    <p>{{ property.listPrice | currency:'USD':'symbol-narrow':'1.2-2' }}</p>
+    <h3>Monthly Rent</h3>
+    <p>{{ property.monthlyRent | currency:'USD':'symbol-narrow':'1.2-2' }}</p>
+    <h3>Gross Yield</h3>
+    <p>{{ property.grossYield | percent:'1.2-2' }}</p>
+    <h3>Year Built</h3>
+    <p>{{ property.yearBuilt }}</p>
+    <h3>Address</h3>
+    <p>
+        {{ property.address?.address1 }} {{ property.address?.address2 }} <br />
+        {{ property.address?.city }} {{ property.address?.county }} {{ property.address?.country }} <br />
+        {{ property.address?.district }} {{ property.address?.state }} {{ property.address?.zip }}
+    </p>
+</div>
+
+<h1 *ngIf="!property" class="text-center">Property not found on local database</h1>
+

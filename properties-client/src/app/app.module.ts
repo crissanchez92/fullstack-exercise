@@ -15,6 +15,7 @@ import { PropertiesComponent } from './components/properties/properties.componen
 import { FooterComponent } from "./components/footer/footer.component";
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
+import { PropertyDetailsComponent } from './components/property-details/property-details.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    PropertyDetailsComponent
   ],
   imports: [
     BrowserModule,

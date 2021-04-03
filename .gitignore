@@ -52,4 +52,4 @@ properties-api/roofstock.Api/obj/
 properties-api/roofstock.Data/obj/
 properties-api/roofstock.Api/bin/
 properties-api/roofstock.Data/bin/
-properties-api/.vs/roofstock.Api/v16/.suo
+properties-api/.vs/*

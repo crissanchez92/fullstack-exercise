@@ -1,6 +1,7 @@
 import { PropertiesService } from '../../services/properties.service';
 import { Component, OnInit } from '@angular/core';
 import { Property } from '../../models/property';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-properties',
@@ -12,7 +13,10 @@ export class PropertiesComponent implements OnInit {
   properties: Property[] = [];
   displayedColumns: string[] = ['propertyID','listPrice','monthlyRent','grossYield', 'yearBuilt','address', 'actions'];
 
-  constructor(private propertiesService: PropertiesService) { }
+  constructor(
+    private propertiesService: PropertiesService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
     this.getProperties();
@@ -48,6 +52,10 @@ export class PropertiesComponent implements OnInit {
           (response: Property) => alert(`Property saved locally with ID: [${response.id}]`),
           err => alert(`An error occurred saving Property [${property.propertyID}]`)
         );  
+  }
+
+  onDetails(property: Property){
+    this.router.navigate(['property-details', property.propertyID]);
   }
 
 }

@@ -44,6 +44,7 @@ namespace roofstock.Data.Services.Impl
         {
             return this.context
                 .Properties
+                .Include(p => p.Address)
                 .FirstOrDefault(p => p.PropertyID == propertyID);
         }
 

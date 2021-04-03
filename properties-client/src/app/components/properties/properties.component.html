@@ -1,5 +1,5 @@
 <div *ngIf="properties.length" class="container">
-  <h2 class="text-center">Properties</h2>
+  <h1 class="text-center display-4">Properties</h1>
   <p class="text-center">Bellow you can see properties retrieved from the external API <a href="https://samplerspubcontent.blob.core.windows.net/public/properties.json">properties.json</a> and you can save each of them locally by clicking on the Save buton.</p>
 
   <table mat-table [dataSource]="properties" class="mat-elevation-z8">
@@ -36,7 +36,10 @@
 
     <ng-container matColumnDef="actions">
       <th mat-header-cell *matHeaderCellDef> Actions </th>
-      <td mat-cell *matCellDef="let property"> <button mat-raised-button color="primary" (click)="onSave(property)">Save</button> </td>
+      <td mat-cell *matCellDef="let property">
+        <button mat-raised-button color="primary" (click)="onSave(property)">Save</button>
+        <button mat-raised-button color="success" (click)="onDetails(property)">Details</button>
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
