@@ -1,3 +1,4 @@
+import { Routes, RouterModule } from '@angular/router';
 import { PropertiesService } from './services/properties.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,13 +13,18 @@ import { HttpClientModule } from "@angular/common/http";
 import { HeaderComponent } from "./components/header/header.component";
 import { PropertiesComponent } from './components/properties/properties.component';
 import { FooterComponent } from "./components/footer/footer.component";
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PropertiesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
