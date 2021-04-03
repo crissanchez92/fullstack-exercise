@@ -1,5 +1,6 @@
-<div class="container">
-  <h2>Properties listed</h2>
+<div *ngIf="properties.length" class="container">
+  <h2 class="text-center">Properties</h2>
+  <p class="text-center">Bellow you can see properties retrieved from the external API <a href="https://samplerspubcontent.blob.core.windows.net/public/properties.json">properties.json</a> and you can save each of them locally by clicking on the Save buton.</p>
 
   <table mat-table [dataSource]="properties" class="mat-elevation-z8">
     
